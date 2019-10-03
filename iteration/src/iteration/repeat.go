@@ -1,11 +1,15 @@
 package iteration
 
-var amount int = 5
+import "strings"
 
+var defaultTimes int = 5
+
+//Repeat default times the text passed as parameter
 func Repeat(text string) string {
-	result := ""
-	for repeated := 0; repeated < amount; repeated++ {
-		result += text
-	}
-	return result
+	return RepeatAmount(text, defaultTimes)
+}
+
+//RepeatAmount amount times the text passed as parameter
+func RepeatAmount(text string, times int) string {
+	return strings.Repeat(text, times)
 }
