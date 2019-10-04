@@ -1,11 +1,11 @@
 package struts
 
 //Perimeter calculate the perimeter of a rectangle
-func Perimeter(witdh, height float64) float64 {
-	return 2 * (witdh + height)
+func Perimeter(rectangle Rectangle) float64 {
+	return 2 * (rectangle.witdh + rectangle.height)
 }
 
 //Area calculate the area of a rectangle
-func Area(witdh, height float64) float64 {
-	return witdh * height
+func Area(rectangle Rectangle) float64 {
+	return rectangle.witdh * rectangle.height
 }
